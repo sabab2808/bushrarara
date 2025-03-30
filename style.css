@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(to bottom right, #4f46e5, #9333ea); /* Blue to Purple Gradient */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Inter', sans-serif; /* Professional font */
+}
+
+.bg-banner {
+    background: url('./banner.png') no-repeat center center/cover; /* Ensure the correct relative path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-banner2 {
+    background: url('./banner2.png') no-repeat center center/cover; /* Ensure the correct relative path */
+    filter: blur(3px); /* Reduced blur to match other banners */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for cards */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #4f46e5; /* Blue */
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca; /* Darker Blue */
+}
+
+.btn-secondary {
+    background-color: #9333ea; /* Purple */
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7e22ce; /* Darker Purple */
+}
+
+input, select, textarea {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent input fields */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder text */
+}
+
+footer {
+    background-color: #1e293b; /* Dark Gray */
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+}
+
+.bg-blur {
+    background: url('banner.png') no-repeat center center/cover;
+    background-color: #2d3748; /* Fallback background color */
+    filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
